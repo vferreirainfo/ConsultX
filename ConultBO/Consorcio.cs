@@ -10,28 +10,14 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-namespace ConultBO
+namespace ConsultBO
 {
-    public enum ClassificacaoMorada
-    {
-        Rua,
-        Avenida,
-        Travessa,
-        Beco,
-        Praca,
-        Marginal,
-
-
-    }
-
+   
     public class Consorcio
     {
         string nomeConsorcio;
-        string pais;
-        string localidade;
-        string morada;
+      
         int codPostal;
-        ClassificacaoMorada tipoMorada;
         bool consLider; // se é ou nao lider
 
 
@@ -39,12 +25,10 @@ namespace ConultBO
         {
 
         }
-        public Consorcio (string nomeC, string paisResid, string loc, int zip)
+        public Consorcio (string nomeC, bool consLid)
         {
             nomeConsorcio = nomeC;
-            pais = paisResid;
-            localidade = loc;
-            zip = codPostal;
+            consLider = consLid;
         }
     }
 }

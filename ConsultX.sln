@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsultX", "ConsultX\ConsultX.csproj", "{2B78A4C9-3893-445F-A1C9-3594B07FBC70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConultBO", "ConultBO\ConultBO.csproj", "{F5D8DEEF-8522-4243-B5A7-54CFD1FA5A95}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsultBO", "ConultBO\ConsultBO.csproj", "{F5D8DEEF-8522-4243-B5A7-54CFD1FA5A95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

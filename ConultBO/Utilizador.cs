@@ -10,7 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-namespace ConultBO
+namespace ConsultBO
 {
     public enum EstadoCivil
     {
@@ -20,9 +20,9 @@ namespace ConultBO
         Divorciado,
     }
 
-    public class Utilizador
+    public class Utilizador: ControlUtilizador
     {
-
+        int id;
         string nomeCompleto;
         string email;
         int numTelefone;
@@ -35,6 +35,7 @@ namespace ConultBO
 
         public Utilizador (string nome, string emailPessoal, int numTel, int numMob, DateTime dtNasc, char gen, EstadoCivil estCiv)
         {
+
             nomeCompleto = nome;
             email = emailPessoal;
             numTelefone = numTel;
@@ -42,5 +43,32 @@ namespace ConultBO
             dtNascimento = dtNasc;
 
         }
+
+        public Utilizador() { }
+
+        public override string NomeUtilizador
+        {
+            get { return nomeCompleto; }
+            set { nomeCompleto = value; }
+
+        }
+        public override string EmailUtilizador
+        {
+            get { return email; }
+            set { email = value; }
+        }
+
     }
+
+    public abstract class ControlUtilizador
+    {
+        public abstract string NomeUtilizador { get; set; }
+
+        public abstract string EmailUtilizador { get; set; }
+
+        public abstract int NumeroTelefoneUtilizador { get; set; }
+
+
+    }
+
 }
