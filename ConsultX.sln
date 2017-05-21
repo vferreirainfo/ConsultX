@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsultX", "ConsultX\Consul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsultBO", "ConultBO\ConsultBO.csproj", "{F5D8DEEF-8522-4243-B5A7-54CFD1FA5A95}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsultDL", "ConsultDL\ConsultDL.csproj", "{67C60063-9EF7-4A43-943E-E1599FA908A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{F5D8DEEF-8522-4243-B5A7-54CFD1FA5A95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5D8DEEF-8522-4243-B5A7-54CFD1FA5A95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5D8DEEF-8522-4243-B5A7-54CFD1FA5A95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67C60063-9EF7-4A43-943E-E1599FA908A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67C60063-9EF7-4A43-943E-E1599FA908A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67C60063-9EF7-4A43-943E-E1599FA908A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67C60063-9EF7-4A43-943E-E1599FA908A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

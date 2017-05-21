@@ -24,7 +24,8 @@ namespace ConsultBO
 
         }
 
-        public override Dictionary<string, Consorcio> AcessoDicConsorcios
+    
+        public override Dictionary<string,Consorcio> AcessoDicConsorcios
         {
             get { return conjuntoConsorcios; }
             set { conjuntoConsorcios = value; }
@@ -33,6 +34,10 @@ namespace ConsultBO
         public override DateTime DataInicioProjeto {
             get => dtInicio; set => dtInicio = value;
         }
+
+        public override DateTime DataFimProjeto {
+            get => dtFim;
+            set => dtInicio = value; }
 
     }
     public abstract class ControlProject

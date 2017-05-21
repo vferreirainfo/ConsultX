@@ -58,6 +58,12 @@ namespace ConsultBO
             set { email = value; }
         }
 
+        public override int NumeroTelefoneUtilizador
+        {
+            get => numTelefone;
+            set => numTelefone = value;
+        }
+
     }
 
     public abstract class ControlUtilizador
