@@ -15,6 +15,7 @@ namespace ConsultDL
 {
     public class GereUtilizadores:ControlaGestaoUtilizadores
     {
+        int a;
         Dictionary<string, Utilizador> conjuntoUtilizadores;
         bool returnResult = false;
         string msgExcecao;
