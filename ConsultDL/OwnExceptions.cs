@@ -12,9 +12,12 @@ using Android.Widget;
 
 namespace ConsultDL
 {
-    class GereUtilizadorcs
+    public class ImpossivelAdicionarUtilizadorException: Exception
     {
+        static string message = "Ñão foi possivel adicionar. Tente novamente!";
+        public ImpossivelAdicionarUtilizadorException():base(message)
+        {
 
-        List<int> teste;
+        }
     }
 }

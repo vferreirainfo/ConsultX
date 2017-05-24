@@ -9,10 +9,10 @@ namespace ConsultDL
     public class GereProjeto:ControlaGestaoProjeto
     {
 
-        Dictionary<int, Projeto> dictProjeto;
+        Dictionary<string, Projeto> dictProjeto;
 
 
-        public override bool VerificaSeExisteProjeto (Projeto p,int key)
+        public override bool VerificaSeExisteProjeto (string key)
         {
             return true;
         }
@@ -25,7 +25,16 @@ namespace ConsultDL
 
     public abstract class ControlaGestaoProjeto
     {
-        public abstract bool VerificaSeExisteProjeto(Projeto p, int key);
+        public abstract bool VerificaSeExisteProjeto(string key);
+
+        public abstract bool VerificaQuantosProjetosTemCustoSuperior(double custo);
+
+        public abstract bool VerificaQuantosProjetosTemCustoInferior(double custo);
+
+
+        public abstract bool OrdenaProjetosPorCusto();
+
+        public abstract bool OrdenaProjetosPorOrdemAlfabetica();
 
         public abstract bool AdicionaProjeto(Projeto p);
 
