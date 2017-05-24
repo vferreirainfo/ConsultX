@@ -41,10 +41,12 @@ namespace ConsultBO
             numTelefone = numTel;
             numTelemovel = numMob;
             dtNascimento = dtNasc;
+            genero = gen;
+            estCivilUtilizador = estCiv;
 
         }
 
-        public Utilizador() { }
+      
 
         public override string NomeUtilizador
         {

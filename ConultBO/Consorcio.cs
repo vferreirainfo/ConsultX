@@ -20,7 +20,7 @@ namespace ConsultBO
         int codPostal;
         bool consLider; // se é ou nao lider
 
-
+        //List<RecursoHumano>
         public Consorcio()
         {
 

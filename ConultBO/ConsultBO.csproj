@@ -50,6 +50,7 @@
     <Compile Include="Projeto.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Trabalhador.cs" />
     <Compile Include="Utilizador.cs" />
   </ItemGroup>
   <ItemGroup>

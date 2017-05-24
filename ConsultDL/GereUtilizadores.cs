@@ -17,6 +17,7 @@ namespace ConsultDL
     {
         int b;
         Dictionary<string, Utilizador> conjuntoUtilizadores;
+        Dictionary<string, Projeto> conjuntoProjetos;
         bool returnResult = false;
         string msgExcecao;
 
@@ -41,6 +42,18 @@ namespace ConsultDL
             excepcao = msgExcecao;
             return returnResult;
         }
+
+        public override Utilizador DeterminaLiderProjeto(Projeto p)
+        {
+            foreach (KeyValuePair<string, Projeto> proj in conjuntoProjetos)
+            {
+                // se p existe
+                if (p == proj.Value)
+                {
+                        
+                }
+            }
+        }
     }
 
     public abstract class ControlaGestaoUtilizadores
@@ -51,7 +64,7 @@ namespace ConsultDL
 
         public abstract Utilizador ProcuraUtilizador(Utilizador user, out string excecao);
 
-        public abstract Utilizador DeterminaLiderProjeto();
+        public abstract Utilizador DeterminaLiderProjeto(Projeto p);
 
         public abstract Utilizador DeterminaResponsaveisProjeto();
 
