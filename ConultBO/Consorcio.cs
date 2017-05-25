@@ -16,11 +16,10 @@ namespace ConsultBO
     public class Consorcio
     {
         string nomeConsorcio;
-      
         int codPostal;
         bool consLider; // se é ou nao lider
-
-        //List<RecursoHumano>
+        Dictionary<string, RecursoHumano> conjRecursos;
+        
         public Consorcio()
         {
 

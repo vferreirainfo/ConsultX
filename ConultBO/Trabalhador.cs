@@ -12,10 +12,21 @@ using Android.Widget;
 
 namespace ConsultBO
 {
+    public enum GrauAcademico
+    {
+        THIRD, //9º
+        SEC, // 12º
+        Licenciatura,
+        Mestrado,
+        Doutoramento,
+
+    }
+
     public class Trabalhador: Utilizador
     {
         string identificacao;
         bool isLider;
+        GrauAcademico grauAcademicoRH;
         static string nome;
         static string emailPessoal;
         static int numTel;
@@ -23,7 +34,8 @@ namespace ConsultBO
         static DateTime dtNasc;
         static char gen;
         static EstadoCivil estCiv;
-    
+
+
 
         public Trabalhador(string codigo, bool trbLider):base(nome,emailPessoal,numTel,numMob,dtNasc,gen,estCiv)
         {
@@ -42,6 +54,12 @@ namespace ConsultBO
             set { isLider = value; }
         }
         
+
+        public GrauAcademico GrauAcademicoTrabalhadores
+        {
+            get { return grauAcademicoRH; }
+            set { grauAcademicoRH = value; }
+        }
 
 
 

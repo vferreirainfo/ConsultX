@@ -50,7 +50,10 @@ namespace ConsultDL
                 // se p existe
                 if (p == proj.Value)
                 {
-                        
+                        foreach (KeyValuePair<string, Consorcio> cons in  conjuntoProjetos)
+                        {
+
+                        }
                 }
             }
         }
