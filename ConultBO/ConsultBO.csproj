@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Consorcio.cs" />
+    <Compile Include="Database.cs" />
     <Compile Include="Morada.cs" />
     <Compile Include="Pais.cs" />
     <Compile Include="Projeto.cs" />

@@ -5,18 +5,56 @@
     p1:layout_width="match_parent"
     p1:layout_height="match_parent"
     p1:id="@+id/relativeLayout1">
-    <RelativeLayout
-        p1:minWidth="25px"
-        p1:minHeight="25px"
+    <TextView
+        p1:text="Password"
+        p1:visibility="visible"
+        p1:layout_marginBottom="-20px"
+        p1:layout_marginLeft="5px"
         p1:layout_width="wrap_content"
         p1:layout_height="wrap_content"
-        p1:id="@+id/relativeLayout2">
-        <Button
-            p1:layout_marginTop="60px"
-            p1:text="Check"
-            p1:visibility="visible"
-            p1:layout_width="wrap_content"
-            p1:layout_height="wrap_content"
-            p1:id="@+id/button1" />
-    </RelativeLayout>
+        p1:layout_centerVertical="true"
+        p1:id="@+id/textView1" />
+    <EditText
+        p1:inputType="textPersonName"
+        p1:text="Password ..."
+        p1:layout_marginLeft="120px"
+        p1:visibility="visible"
+        p1:width="650px"
+        p1:paddingRight="-300dp"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_above="@id/editText1"
+        p1:layout_centerVertical="true"
+        p1:id="@+id/editText1"
+        p1:gravity="center" />
+    <TextView
+        p1:text="Utilizador"
+        p1:visibility="visible"
+        p1:layout_marginTop="900px"
+        p1:layout_marginLeft="5px"
+        p1:layout_width="wrap_content"
+        p1:layout_height="match_parent"
+        p1:layout_centerVertical="true"
+        p1:id="@+id/textView2" />
+    <EditText
+        p1:inputType="textPersonName"
+        p1:text="Username ..."
+        p1:layout_marginLeft="120px"
+        p1:visibility="visible"
+        p1:width="650px"
+        p1:paddingRight="-300dp"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_above="@id/editText1"
+        p1:layout_centerVertical="true"
+        p1:id="@+id/editText2"
+        p1:gravity="center" />
+    <Button
+        p1:text="Check"
+        p1:visibility="visible"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/button1"
+        p1:layout_alignParentRight="true"
+        p1:layout_alignParentBottom="true" />
 </RelativeLayout>

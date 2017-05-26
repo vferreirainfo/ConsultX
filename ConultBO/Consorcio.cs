@@ -16,7 +16,7 @@ namespace ConsultBO
     public class Consorcio
     {
         string nomeConsorcio;
-        int codPostal;
+        Morada m;
         bool consLider; // se é ou nao lider
         Dictionary<string, RecursoHumano> conjRecursos;
         
@@ -28,6 +28,19 @@ namespace ConsultBO
         {
             nomeConsorcio = nomeC;
             consLider = consLid;
+        }
+
+
+        public string NomeConsorcio
+        {
+            get { return nomeConsorcio; }
+            set { nomeConsorcio = value; }
+
+        }
+        public Morada MoradaConsorcio
+        {
+            get { return m; }
+            set { m = value; }
         }
     }
 }

@@ -52,7 +52,7 @@ namespace ConsultDL
                 {
                         foreach (KeyValuePair<string, Consorcio> cons in  conjuntoProjetos)
                         {
-
+                            
                         }
                 }
             }

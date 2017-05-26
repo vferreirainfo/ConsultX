@@ -34,6 +34,8 @@ namespace ConsultBO
         static DateTime dtNasc;
         static char gen;
         static EstadoCivil estCiv;
+        int pertenceARecHumano;
+        
 
 
 
@@ -54,6 +56,12 @@ namespace ConsultBO
             set { isLider = value; }
         }
         
+        public int IdentificacaoRecHum
+        {
+            get { return pertenceARecHumano; }
+            set { pertenceARecHumano = value; }
+        }
+
 
         public GrauAcademico GrauAcademicoTrabalhadores
         {
