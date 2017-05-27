@@ -59,6 +59,9 @@ namespace ConsultBO
             set { password = value; }
         }
 
+
+        
+
     }
 
 

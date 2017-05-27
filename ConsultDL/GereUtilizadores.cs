@@ -13,8 +13,11 @@ using ConsultBO;
 
 namespace ConsultDL
 {
+      /*
     public class GereUtilizadores:ControlaGestaoUtilizadores
     {
+
+      
         int b;
         Dictionary<string, Utilizador> conjuntoUtilizadores;
         Dictionary<string, Projeto> conjuntoProjetos;
@@ -86,3 +89,5 @@ namespace ConsultDL
         public abstract bool EliminaUtilizador(Utilizador user, out string excepcao);
     }
 }
+*/
+ }

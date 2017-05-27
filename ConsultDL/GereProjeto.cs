@@ -6,6 +6,8 @@ using ConsultBO;
 
 namespace ConsultDL
 {
+
+    /*
     public class GereProjeto:ControlaGestaoProjeto
     {
 
@@ -22,6 +24,7 @@ namespace ConsultDL
         }
         
     }
+
 
     public abstract class ControlaGestaoProjeto
     {
@@ -40,6 +43,6 @@ namespace ConsultDL
 
     }
 
-   
+   */
     
 }

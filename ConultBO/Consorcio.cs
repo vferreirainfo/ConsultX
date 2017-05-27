@@ -9,16 +9,18 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using SQLite.Net.Attributes;
 
 namespace ConsultBO
 {
-   
+
     public class Consorcio
     {
-        string nomeConsorcio;
-        Morada m;
-        bool consLider; // se é ou nao lider
-        Dictionary<string, RecursoHumano> conjRecursos;
+        [PrimaryKey, AutoIncrement]
+        string nomeConsorcio { get; set; }
+        Morada m { get; set; }
+        bool consLider { get; set; } // se é ou nao lider
+        Dictionary<string, RecursoHumano> conjRecursos { get; set; }
         
         public Consorcio()
         {
@@ -42,5 +44,7 @@ namespace ConsultBO
             get { return m; }
             set { m = value; }
         }
+
+        
     }
 }
