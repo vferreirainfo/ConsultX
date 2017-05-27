@@ -19,5 +19,7 @@ namespace ConultBO
 
         ISQLitePlatform Plataforma { get; set; }
 
+        bool CriaConexaoDB();
+
     }
 }
