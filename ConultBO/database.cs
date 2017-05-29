@@ -24,8 +24,7 @@ namespace ConsultBO
     {
         // A classe contem as definicoes de base de dados e metodos estaticos para trabalhar com BD
 
-        string serverName;
-        string userName;
+       
         string dbname;// workspace
         string password;
         ISQLitePlatform plataforma;
@@ -34,26 +33,15 @@ namespace ConsultBO
         public Database() { }
 
 
-        public Database(string hostName, string userInfo, string name, string pass)
+        public Database(string name, string pass)
         {
-            serverName = hostName;
-            userName = userInfo;
+          
             dbname = name;
             password = pass;
         }
 
 
-        public override string ApexServerName
-        {
-            get { return serverName; }
-            set { serverName = value; }
-        }
-
-        public override string ApexUserName
-        {
-            get { return userName; }
-            set { userName = value; }
-        }
+  
 
         public override string DiretoriaDB
         {
@@ -118,17 +106,11 @@ namespace ConsultBO
     }
 
 
-    public abstract class DataBaseControlConfig:IConfig
+    public abstract class DataBaseControlConfig
     {
-        public abstract string ApexServerName
-        {
-            get; set;
-        }
+       
 
-        public abstract string ApexUserName
-        {
-            get; set;
-        }
+    
         public abstract string ApexUserPassword
         {
             get; set;
